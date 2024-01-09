@@ -1,0 +1,550 @@
+/* Add this to your component or global styles */
+.info-box {
+  padding: 20px;
+  /* Increase padding for larger boxes */
+  margin: 10px;
+  /* Add margin for spacing */
+  border-radius: 10px;
+  /* Add border-radius for rounded corners */
+  color: #fff;
+  min-width: 200px;
+  /* Set a minimum width for consistency */
+  min-height: 100px;
+  text-align: center;
+  /* Center text inside the box */
+}
+
+/*linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7)*/
+.username-box {
+
+  background: linear-gradient(to right,#405DE6, #8c98d9);
+  /* Blue color for username */
+}
+
+.followers-box {
+  background: linear-gradient(to right, #833AB4, rgb(172, 134, 197));
+  /* Green color for followers */
+}
+
+.following-box {
+  background: linear-gradient(to right, #E1306C, #e0789b);
+  /* Red color for following */
+}
+
+.total-posts-box {
+  background: linear-gradient(to right, #F56040, #f39580);
+  /* Yellow color for total posts */
+}
+
+.analysis-box {
+  padding: 20px;
+  /* Increase padding for larger boxes */
+  margin: 20px;
+  /* Add margin for spacing */
+  border-radius: 30px;
+  /* Add border-radius for rounded corners */
+  min-width: 50px;
+  /* Set a minimum width for consistency */
+  text-align: center;
+  /* Center text inside the box */
+  border: 2px solid rgb(122, 99, 223)
+}
+
+.square-effect {
+  border: 5px solid #Dfd;
+  /* Add a border */
+  padding: 10px;
+  /* Add padding to create a square-like appearance */
+  margin-bottom: 10px;
+  /* Add margin-bottom for spacing between items */
+  border-radius: 8px;
+  color: #ffffff
+}
+
+.square-effect1 {
+  background-color: #28af94;
+}
+
+.square-effect2 {
+  color: #ffffff;
+  border: 5px solid #fdf;
+  background-color: #dc7cdc
+
+}
+
+.likes-box {
+  font-size: 20px;
+  padding: 10px;
+  /* Increase padding for larger boxes */
+  margin: 10px;
+  /* Add margin for spacing */
+  border-radius: 10px;
+  /* Add border-radius for rounded corners */
+  background-color: #Dfd;
+}
+
+.comments-box {
+  padding: 10px;
+  /* Increase padding for larger boxes */
+  margin: 10px;
+  /* Add margin for spacing */
+  border-radius: 10px;
+  /* Add border-radius for rounded corners */
+  background-color: #fdf;
+}
+
+.post-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.post-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.total-container {
+  transition: color 0.3s ease-in-out;
+}
+
+.total-container:hover {
+  background-color: rgb(122, 99, 223); /* Change to the desired color when hovered */
+  color: #ffffff;
+}
+
+.profile-card {
+  padding: 8px;
+  /* Increase padding for larger boxes */
+  margin: 10px;
+  /* Add margin for spacing */
+
+  border-radius: 10px;
+  /* Add border-radius for rounded corners */
+  background-color: #3B5BA5;
+  color:#fff;
+  min-width: 150px;
+  /* Set a minimum width for consistency */
+  min-height: 100px;
+  justify-content: center;
+  font-size: medium;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 300px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3B941; /* Set the background color for the icon container */
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.icon-container svg {
+  color: #D56729; /* Set the icon color */
+}
+
+.card-text div {
+  margin-bottom: 10px;
+}
+
+.profile-card1 {
+  padding: 8px;
+  margin: 10px;
+  border-radius: 8px;
+  color: #3ba0a5;
+  background-color: rgb(221, 253, 255);
+  justify-content: center;
+  max-width: 300px;
+}
+
+.linkedin-card{
+  padding: 8px;
+  margin: 10px;
+  border-radius: 8px;
+  color: #fd8003;
+  background-color: #fffec4;
+  justify-content: center;
+  max-width: 300px;
+  min-width: max-content;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.result-table th, .result-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+.result-cell {
+  max-width: 200px; /* Adjust the maximum width of cells if needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.result-table td.url-column {
+  max-width: 400px; /* Increase the size as needed */
+  white-space: normal;
+}
+
+/* App.css */
+/* ... (existing styles) */
+
+.result-cell.full-sentence {
+  white-space: normal;
+}
+.file-upload-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.file-upload-container input {
+  margin-right: 10px;
+}
+
+.file-upload-container span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+h1 {
+  margin-top: 0; /* Align the heading at the top of the page */
+  margin-bottom: 5px; /* Adjust the margin between h1 and p */
+  align-items: top;
+}
+
+p {
+  margin-bottom: 10px; /* Adjust the margin between p and textarea */
+  font-size: 8px; /* Change the font size */
+  font-family: 'Arial', sans-serif;
+}
+
+textarea {
+  margin-bottom: 10px;
+  width: 500px;
+  height: 200px;
+}
+
+.button-container {
+  display: flex; /* Use flex to create a row layout */
+  gap: 10px; /* Adjust the gap between buttons as needed */
+}
+
+
+.red-button,
+.blue-button,
+.file-upload-button {
+  background-color: #008fb7;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  width: 150px;
+  height: 70px;
+}
+
+.red-button:hover,
+.blue-button:hover,
+.file-upload-button:hover {
+  background-color: #005168;
+}
+
+.file-upload-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.file-upload-button input {
+  position: absolute;
+  font-size: 100px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+
+.file-upload-button i {
+  margin-right: 5px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #eaf9fd;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Styling for the entire chat container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 375px; /* Adjust the width as needed */
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add this CSS class for clickable responses */
+.clickable{
+  background-color: #1686e7; /* Background color for the bubble */
+  color: white; /* Text color */
+  padding: 8px; /* Add padding for better appearance */
+  margin: 8px 0; /* Add margin to separate bubbles */
+  border-radius: 8px;
+  margin: 4px;
+  display: inline-block; /* Display bubbles in a row */
+  cursor: pointer; /* Set cursor to pointer to indicate clickability */
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+
+/* Styling for the chat history area */
+.chat-history {
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 300px; /* Adjust the maximum height to control scrolling */
+}
+
+/* Styling for each chat entry */
+.chat-entry {
+  margin: 4px 0;
+  display: flex;
+  flex-direction: column; /* Allow chat bubbles to expand vertically */
+}
+
+/* Styling for the user's message */
+.user-message {
+  background-color: #1167b1; /* Blue or your preferred color */
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 4px;
+  align-self: flex-end;
+  max-width: 70%; /* Set a maximum width to control text wrapping */
+  
+}
+
+/* Styling for the chatbot's message */
+.chatbot-message {
+  background-color: #ebf5fd; /* Gray or your preferred color */
+  color: #333;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 4px;
+  align-self: flex-start;
+  max-width: 70%; /* Set a maximum width to control text wrapping */
+  word-wrap: break-word;
+}
+
+User
+
+/* Styling for the entire chat container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 350px; /* Adjust the width as needed */
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add this CSS class for clickable responses */
+.clickable{
+  background-color: #1686e7; /* Background color for the bubble */
+  color: white; /* Text color */
+  padding: 8px; /* Add padding for better appearance */
+  margin: 8px 0; /* Add margin to separate bubbles */
+  border-radius: 8px;
+  margin: 4px;
+  display: inline-block; /* Display bubbles in a row */
+  cursor: pointer; /* Set cursor to pointer to indicate clickability */
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+
+/* Styling for the chat history area */
+.chat-history {
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 300px; /* Adjust the maximum height to control scrolling */
+}
+
+/* Styling for each chat entry */
+.chat-entry {
+  margin: 4px 0;
+  display: flex;
+  flex-direction: column; /* Allow chat bubbles to expand vertically */
+}
+
+/* Styling for the user's message */
+.user-message {
+  background-color: #1167b1; /* Blue or your preferred color */
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 4px;
+  align-self: flex-end;
+  max-width: 70%; /* Set a maximum width to control text wrapping */
+  
+}
+
+/* Styling for the chatbot's message */
+.chatbot-message {
+  background-color: #ebf5fd; /* Gray or your preferred color */
+  color: #333;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 4px;
+  align-self: flex-start;
+  max-width: 70%; /* Set a maximum width to control text wrapping */
+  word-wrap: break-word;
+}
+
+
+/* Styling for the user input area */
+.user-input {
+  display: flex;
+  padding: 10px;
+  background-color: #ebf5fd; /* Light gray or your preferred color */
+  border-top: 1px solid #ccc;
+  justify-content: space-between;
+}
+
+/* Styling for the input field */
+input[type="text"] {
+  flex:1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.user-option {
+  cursor: pointer;
+  background-color: #1167b1;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  display: flex; /* Use display: flex to allow items to expand dynamically */
+  align-items: center; /* Center align items vertically */
+  justify-content: flex-start; /* Align content to the start of the container */
+  width: fit-content; /* Adjust width based on content length */
+  max-width: 100%; /* Set a maximum width if needed */
+}
+
+/* Style on hover */
+.user-option:hover {
+  background-color: #0056b3;
+}
+
+
+.url-link {
+  color: blue; /* You can choose your desired color */
+  text-decoration: underline; /* Underline to make it look like a link */
+  cursor: pointer;
+}
+
+.bg{
+  padding: 10px;
+  background-color: #1167b1;
+  color: #ffffff;
+  margin: 0;
+  border-radius: 3px;
+}
+
+.special-message {
+  background-color: #0e4c83; /* customize the background color as needed */
+  color: #fff; /* customize the text color as needed */
+  border-radius: 5px; /* add border-radius for rounded corners */
+  padding: 8px; /* add padding for spacing */
+  margin-top: 20px; /* add margin for spacing between messages */
+}
+
+.yes-option {
+  display: inline-block;
+  background-color: #53bd56; /* Green color for "Yes" */
+  color: #fff; /* White text color */
+  min-width: 30%;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.no-option {
+  display: inline-block;
+  background-color: #FF5733; /* Orange color for "No" */
+  color: #fff; /* White text color */
+  min-width: 30%;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.send-button {
+  background-color: #1686e7; /* Blue color for "Send" button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  width: 80px; /* Adjust the width as needed */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Hover effect for the "Send" button */
+.send-button:hover {
+  background-color: #03254c; /* Slightly darker shade of the main color */
+}
